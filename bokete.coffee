@@ -4,13 +4,13 @@
 #
 # Dependencies:
 #   "request":""
-#   "request":""
+#   "cheerio":""
 #
 # Configuration:
 #   None
 #
 # Commands:
-#   /[(bo)ぼボ(ﾎﾞ)][(ke)けケｹ][(te)てテﾃ]/i
+#   /(bo|ﾎﾞ|[ぼボ])(ke|[けケｹ])(te|[てテﾃ])/i
 #
 # URLS:
 #   None
@@ -20,7 +20,7 @@ cheerio = require 'cheerio'
 
 module.exports = (robot) ->
 
-  robot.hear /[(bo)ぼボ(ﾎﾞ)][(ke)けケｹ][(te)てテﾃ]/i, (msg) ->
+  robot.respond /(bo|ﾎﾞ|[ぼボ])(ke|[けケｹ])(te|[てテﾃ])/i, (msg) ->
     options =
       url: "http://bokete.jp/boke/daily"
       timeout: 2000
