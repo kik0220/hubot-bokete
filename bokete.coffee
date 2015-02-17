@@ -22,7 +22,7 @@ module.exports = (robot) ->
 
   robot.respond /(bo|ﾎﾞ|[ぼボ])(ke|[けケｹ])(te|[てテﾃ])/i, (msg) ->
     options =
-      url: "http://bokete.jp/boke/daily"
+      url: "http://bokete.jp/boke/popular"
       timeout: 2000
       headers: {'user-agent': 'node fetcher'}
     request options, (error, response, body) ->
