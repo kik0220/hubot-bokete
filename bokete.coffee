@@ -1,6 +1,6 @@
 # Description:
 #   Hubot bokete.jp script
-#   http://bokete.jp/boke/dailyから画像をランダムに表示します。
+#   http://bokete.jp/boke/から画像をランダムに表示します。
 #
 # Dependencies:
 #   "request":""
@@ -10,7 +10,7 @@
 #   None
 #
 # Commands:
-#   /(bo|ﾎﾞ|[ぼボ])(ke|[けケｹ])(te|[てテﾃ])/i
+#   hubot <bokete|ぼけて> [recent|hot|popular|pickup|select|legend|Description|Commands]
 #
 # URLS:
 #   None
